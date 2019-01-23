@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+Use node version v10.15.0 or higher.
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
