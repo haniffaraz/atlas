@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import * as Data from './components/data.json'
+import * as Data from './data.json'
 
 class App extends React.Component {
 
   state = {
-    communities: Data
+    data: Data
   }
 
   render() {
     return (
       <div className="App">
-        <Header data={this.state.communities}/>
+        <Header data={this.state.data}/>
       </div>
     );
   }

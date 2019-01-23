@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 
 class Header extends Component {
   render() {
-      
     return (
       <div>
-        <h1>hi</h1>
+        <h1>LIST OF COMMUNITIES</h1>
       </div>
     )
   }
