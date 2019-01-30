@@ -1,15 +1,108 @@
-* {
-  box-sizing: border-box;
+*{
   margin: 0;
   padding: 0;
 }
 
+html,
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4;
+  height: 100%;
+  overflow: hidden;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(17,123,189);
 }
+
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline:0;
+}
+
+svg {
+  padding: 5px;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -65px;
+  margin-left: -35px;
+  width: 70px;
+  height: 90px;
+}
+
+.left {
+  right: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
+
+.panel.open {
+  height: 85%;
+  width: 600px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
+
+.panel.closed {
+  height: 85%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.hidden {
+  display:none;
+  visibility: hidden;
+}
+
+.panel.closed .content {
+  display: none;
+  visibility: none;
+}
+
+.panel.open .content {
+  transition: .5s;
+}
+
