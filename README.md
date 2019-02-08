@@ -2,9 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 Use node version v10.15.0 or higher.
+
+In the project directory, you can run:
 
 ### `npm start`
 
