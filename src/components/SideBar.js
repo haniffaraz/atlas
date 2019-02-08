@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './Header'
 
 
 class SideBar extends Component {
@@ -8,7 +9,7 @@ class SideBar extends Component {
         btn1Class: "arrow left hidden",
         btn2Class: "arrow right"       
     }
-  
+
     handleRightClick = (e) => {
         if (e.currentTarget.classList.value === 'arrow right') {
             this.setState({
@@ -42,6 +43,9 @@ class SideBar extends Component {
                     <polyline fill="none" stroke="black" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/>
                 </svg>
                 </button>
+                <div className="content">
+                    <Header data={this.props.data}/>
+                </div>
         </div>
     )
   }

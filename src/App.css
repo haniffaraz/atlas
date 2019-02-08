@@ -34,6 +34,14 @@ svg {
   height: 90px;
 }
 
+.btn {
+ font-size: 20px
+}
+
+.list {
+  color: blue
+}
+
 .left {
   right: 0;
 }
@@ -68,7 +76,7 @@ polyline {
 
 .panel.open {
   height: 85%;
-  width: 600px;
+  width: 400px;
   position: fixed;
   z-index: 1;
   bottom: 0;
@@ -106,3 +114,27 @@ polyline {
   transition: .5s;
 }
 
+.header {
+  margin-left: 15px;
+  margin-bottom: 200px
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead tr {
+  display: table-cell
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

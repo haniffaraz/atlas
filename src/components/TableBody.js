@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
-import TableRow from './TableRow';
+import _ from 'lodash';
 
 class TableBody extends Component {
   render() {
       let { communities } = this.props;
-      const tableBody = communities.map(community => {
-          return <TableRow community={community} key={community.name}/>
-        })
-      
+      const data = [...communities];
+      const sortedData = _.sortBy(data, o => o.name);
+      const tableBody = sortedData.map((community,i) => {
+          return (
+                <tr key={i}>
+                    <td className="Cell">{community.name}</td>
+                    <td className="Cell">{community.cases}</td>
+                </tr>
+          )});
     return (
-        <div className="tableBody">
-            {tableBody}
-        </div>
-    )
-  }
+            tableBody
+        )
+     }
 }
 
 export default TableBody;
