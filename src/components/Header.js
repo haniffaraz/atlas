@@ -10,6 +10,6 @@ const Header = ({ data }) => (
           <Table communities={data.default.communities}/>
         </div>
       </div>
-    )
+)
 
 export default Header;
